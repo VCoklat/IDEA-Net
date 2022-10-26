@@ -13,4 +13,4 @@ dependencies:
   - pip:
     - opencv-python==3.4.2.17
     - keras==2.2.5
-    - tensorflow-gpu==1.14.0
+    - tensorflow-gpu==1.5.0
