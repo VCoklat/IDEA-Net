@@ -12,7 +12,7 @@ from scipy.misc.pilutil import imsave
 import models.losses, models.dsa_gam, models.params
 
 
-slim = tf.contrib.slim
+slim =tf.compat.v1.estimator.slim
 
 
 class CycleGAN:
