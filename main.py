@@ -65,7 +65,7 @@ def main():
     BBox_area = int(config['DSAGAM_area']) if 'DSAGAM_area' in config else 1000
 
     path_denoise = utils.Bbox(thresh_bbox, BBox_area)
-    path = './outputs/'
+    path = './output/exp_01/DSA-EDM/'
     file_list = os.listdir(path)
 
     for file_name in file_list:
