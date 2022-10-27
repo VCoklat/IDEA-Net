@@ -8,7 +8,7 @@ import argparse
 import data_loader
 import numpy as np
 import tensorflow as tf
-from scipy import scipy.misc.imsave
+from scipy.misc.pilutil import imsave
 from tensorflow.keras.layers import InputSpec
 import models.losses, models.dsa_gam, models.params, models.dsa_edm, models.params
 
