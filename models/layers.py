@@ -1,7 +1,7 @@
 import tensorflow as tf
 from keras import backend as K
 from keras.layers import Conv2D
-from keras.engine import InputSpec
+from keras.layers import InputSpec
 from keras.utils import conv_utils
 
 
