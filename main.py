@@ -12,6 +12,7 @@ from scipy.misc.pilutil import imsave
 from tensorflow.keras.layers import InputSpec
 import models.losses, models.dsa_gam, models.params, models.dsa_edm, models.params
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 tf.set_random_seed(1)
 np.random.seed(0)
