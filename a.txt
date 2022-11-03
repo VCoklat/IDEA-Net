@@ -12,4 +12,4 @@ keras-rl<0.4.0
 spacy<2.0.10
 theano==0.8.2
 pymc3==3.0
-bleach==1.6.0 
+bleach==2.0.0 
