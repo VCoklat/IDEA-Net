@@ -75,7 +75,7 @@ def main():
     os.remove(path_denoise)
 
 
-config_filename = './configs/exp_01.json'
+config_filename = '/kaggle/working/IDEA-Net/configs/exp_01.json'
 
 with open(config_filename) as config_file:
         config = json.load(config_file)
@@ -151,9 +151,9 @@ def parse_args():
     desc = "IDEA-NET"
     parser = argparse.ArgumentParser(description=desc)
     parser.add_argument('--to_train', type=int, default=True, help='Whether it is train or false.')
-    parser.add_argument('--log_dir', type=str, default='./output/exp_01', help='Where the data is logged to.')
-    parser.add_argument('--config_filename', type=str, default='./configs/exp_01.json', help='configuration file name')
-    parser.add_argument('--checkpoint_dir', type=str, default='./output/exp_01/CHECK', help='train/test split name')
+    parser.add_argument('--log_dir', type=str, default='/kaggle/working/IDEA-Net/output/exp_01', help='Where the data is logged to.')
+    parser.add_argument('--config_filename', type=str, default='/kaggle/working/IDEA-Net/configs/exp_01.json', help='configuration file name')
+    parser.add_argument('--checkpoint_dir', type=str, default='/kaggle/working/IDEA-Net/output/exp_01/CHECK', help='train/test split name')
     parser.add_argument('--skip', type=bool, default=False, help='Use skip-connection between encoder/decoder or not')
     parser.add_argument('--switch', type=int, default=30, help='Number of epoch that foreground fed to discriminator')
     parser.add_argument('--threshold', type=float, default=0.1, help='Threshold for foreground selection ')
